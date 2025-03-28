@@ -49,10 +49,10 @@ public class HandlingBrokenLinks {
 				con.connect(); // connect to the server and send request to the server
 
 				if (con.getResponseCode() >= 400) {
-					System.out.println(hrefValue + "========> Broken Links");
+					System.out.println(hrefValue + "========> Broken Link");
 					brokenLinks++;
 				} else {
-					System.out.println(hrefValue + "========> Not a Broken Links");
+					System.out.println(hrefValue + "========> Not a Broken Link");
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
